@@ -8,7 +8,7 @@ function updateTime() {
 
     losAngelesDateELement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
     losAngelesTimeElement.innerHTML = losAngelesTime.format(
-      "h:mm:ss:SSS [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -21,7 +21,7 @@ function updateTime() {
 
     parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
     parisTimeElement.innerHTML = parisTime.format(
-      "h:mm:ss:SSS [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
@@ -40,16 +40,16 @@ function updateCity(event) {
       <h2>${cityName}</h2>
       <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format(
-      "h:mm:ss:SSS"
-    )} <small>${cityTime.format("A")}</small></div>
+    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    "A"
+  )}</small></div>
   </div>
   <a href="/">All Cities</a>
   `;
 }
 
 updateTime();
-setInterval(updateTime, 1);
+setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
