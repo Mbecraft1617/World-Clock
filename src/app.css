@@ -62,3 +62,20 @@ footer {
   color: white;
   opacity: 95%;
 }
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 20px;
+  }
+  .time {
+    font-size: 24px;
+  }
+  .time small {
+    font-size: 15px;
+  }
+  .date {
+    font-size: 12px;
+  }
+  footer {
+    font-size: 20px;
+  }
+}
