@@ -1,6 +1,6 @@
 body {
-  background-color: #f9f7fe;
-  font-family: sans-serif;
+  background-image: url(https://i.postimg.cc/Kzz2gG6m/world-clock.png);
+  font-family: "Limelight", cursive;
 }
 select {
   display: block;
@@ -11,8 +11,9 @@ select {
 }
 h1 {
   text-align: center;
-  font-family: sans-serif;
-  font-size: 36px;
+  font-family: "Caramel", cursive;
+  font-size: 70px;
+  opacity: 90%;
 }
 h2 {
   margin: 0 0 5px;
@@ -20,15 +21,18 @@ h2 {
 }
 footer {
   text-align: center;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 36px;
+  font-family: "Caramel", cursive;
+  color: white;
+  opacity: 95%;
 }
 .container {
   max-width: 600px;
   margin: 60px auto;
   background: white;
+  opacity: 60%;
   padding: 30px;
-  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  box-shadow: 0px 7px 29px 0px rgba(251, 247, 247, 0.2);
   border-radius: 10px;
 }
 .city {
@@ -42,7 +46,8 @@ footer {
   border: none;
 }
 .date {
-  opacity: 0.7;
+  opacity: 100%;
+  font-style: italic;
 }
 .time {
   font-size: 48px;
@@ -52,4 +57,8 @@ footer {
   font-size: 24px;
   vertical-align: middle;
   line-height: 48px;
+}
+.github-link {
+  color: white;
+  opacity: 95%;
 }
